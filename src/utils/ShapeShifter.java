@@ -16,8 +16,8 @@ import net.sf.json.JSONObject;
 public class ShapeShifter {
 
     public static String shapesList() {
-//Je m'apelle pas Guillaumeaaa
-        return null; 
+        //Fait ta job caliss!!!
+        return null;
     }
 
     public static String shapeOne(String nameOfShape, double val1) {
