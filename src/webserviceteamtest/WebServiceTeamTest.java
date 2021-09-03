@@ -18,8 +18,10 @@ public class WebServiceTeamTest {
      */
     public static void main(String[] args) {
 
-        System.out.println(ShapeShifter.shapeOne("circle", 5));
-        System.out.println(ShapeShifter.shapeOne("ircle", 5));
+        System.out.println(ShapeShifter.shapesList() + "\n");
+        
+        System.out.println(ShapeShifter.shapeOne("circle", 5) + "\n");
+        System.out.println(ShapeShifter.shapeOne("ircle", 5) + "\n");
 
         System.out.println(ShapeShifter.shapeThree("trapEzoid", 5, 2, 3) + "\n");
 
