@@ -15,7 +15,8 @@ public class ShapeShifterIMPL implements ShapeShifter {
 
     @Override
     public String shapesList() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                //jacques
+                return null;
     }
 
     @Override
