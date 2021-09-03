@@ -7,6 +7,7 @@ package utils;
 
 import java.time.Instant;
 import java.util.Date;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 /** 
@@ -16,8 +17,48 @@ import net.sf.json.JSONObject;
 public class ShapeShifter {
 
     public static String shapesList() {
-        //Fait ta job caliss!!!
-        return null;
+        JSONArray liste = new JSONArray();
+        JSONObject triangle = new JSONObject();
+        triangle.accumulate("name", "triangle");
+        triangle.accumulate("NumberofParam", 2);
+        liste.add(triangle);
+        
+        JSONObject rectangle = new JSONObject();
+        rectangle.accumulate("name", "triangle");
+        rectangle.accumulate("NumberofParam", 2);
+        liste.add(rectangle);
+        
+        JSONObject trapezoid = new JSONObject();
+        trapezoid.accumulate("name", "triangle");
+        trapezoid.accumulate("NumberofParam", 3);
+        liste.add(trapezoid);
+        
+        JSONObject ellipse = new JSONObject();
+        ellipse.accumulate("name", "triangle");
+        ellipse.accumulate("NumberofParam", 2);
+        liste.add(ellipse);
+        
+        JSONObject square = new JSONObject();
+        square.accumulate("name", "triangle");
+        square.accumulate("NumberofParam", 1);
+        liste.add(square);
+        
+        JSONObject parallelogram = new JSONObject();
+        parallelogram.accumulate("name", "triangle");
+        parallelogram.accumulate("NumberofParam", 2);
+        liste.add(parallelogram);
+        
+        JSONObject circle = new JSONObject();
+        circle.accumulate("name", "triangle");
+        circle.accumulate("NumberofParam", 2);
+        liste.add(circle);
+        
+        JSONObject sector = new JSONObject();
+        sector.accumulate("name", "triangle");
+        sector.accumulate("NumberofParam", 1);
+        liste.add(sector);
+        
+        return liste.toString();
     }
 
     public static String shapeOne(String nameOfShape, double val1) {
