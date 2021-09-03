@@ -25,37 +25,37 @@ public class ShapeShifter {
         liste.add(triangle);
         
         JSONObject rectangle = new JSONObject();
-        rectangle.accumulate("name", "triangle");
+        rectangle.accumulate("name", "Rectangle");
         rectangle.accumulate("NumberofParam", 2);
         liste.add(rectangle);
         
         JSONObject trapezoid = new JSONObject();
-        trapezoid.accumulate("name", "triangle");
+        trapezoid.accumulate("name", "Trapezoid");
         trapezoid.accumulate("NumberofParam", 3);
         liste.add(trapezoid);
         
         JSONObject ellipse = new JSONObject();
-        ellipse.accumulate("name", "triangle");
+        ellipse.accumulate("name", "Ellipse");
         ellipse.accumulate("NumberofParam", 2);
         liste.add(ellipse);
         
         JSONObject square = new JSONObject();
-        square.accumulate("name", "triangle");
+        square.accumulate("name", "Square");
         square.accumulate("NumberofParam", 1);
         liste.add(square);
         
         JSONObject parallelogram = new JSONObject();
-        parallelogram.accumulate("name", "triangle");
+        parallelogram.accumulate("name", "Parallelogram");
         parallelogram.accumulate("NumberofParam", 2);
         liste.add(parallelogram);
         
         JSONObject circle = new JSONObject();
-        circle.accumulate("name", "triangle");
+        circle.accumulate("name", "Circle");
         circle.accumulate("NumberofParam", 2);
         liste.add(circle);
         
         JSONObject sector = new JSONObject();
-        sector.accumulate("name", "triangle");
+        sector.accumulate("name", "Sector");
         sector.accumulate("NumberofParam", 1);
         liste.add(sector);
         
