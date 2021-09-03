@@ -11,7 +11,7 @@ import interfaces.ShapeShifter;
  *
  * @author Guillaume
  */
-public class ShapeShifterIMPL implements ShapeShifter{
+public class ShapeShifterIMPL implements ShapeShifter {
 
     @Override
     public String shapesList() {
@@ -30,7 +30,12 @@ public class ShapeShifterIMPL implements ShapeShifter{
 
     @Override
     public String shapeThree(String nameOfShape, double val1, double val2, double val3) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+//        if (nameOfShape) {
+//            
+//        }
+        
+        return "";
     }
-    
+
 }
