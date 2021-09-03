@@ -15,8 +15,7 @@ public class ShapeShifterIMPL implements ShapeShifter {
 
     @Override
     public String shapesList() {
-                //jacques 
-                return null;
+        return null;
     }
 
     @Override
@@ -31,13 +30,11 @@ public class ShapeShifterIMPL implements ShapeShifter {
 
     @Override
     public String shapeThree(String nameOfShape, double val1, double val2, double val3) {
-        
+
 //        if (nameOfShape) {
 //            
 //        }
 
-// testysttttttttt
-        
         return "";
     }
 
