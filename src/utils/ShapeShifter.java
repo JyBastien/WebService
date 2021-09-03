@@ -28,7 +28,7 @@ public class ShapeShifter {
         if (nameOfShape.equalsIgnoreCase("Circle")) {
             json.accumulate("Status", "OK");
             json.accumulate("Shape", nameOfShape.toUpperCase());
-            json.accumulate("raduis", val1);
+            json.accumulate("radius", val1);
             json.accumulate("area", Calcul.areaFromRadius(val1));
         } else {
             json.accumulate("Status", "Error");
