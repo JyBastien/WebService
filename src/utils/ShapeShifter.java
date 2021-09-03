@@ -29,7 +29,7 @@ public class ShapeShifter {
             json.accumulate("Status", "OK");
             json.accumulate("Shape", nameOfShape.toUpperCase());
             json.accumulate("raduis", val1);
-            json.accumulate("area", Calculs.areaFromRadius(val1));
+            json.accumulate("area", Calcul.areaFromRadius(val1));
         } else {
             json.accumulate("Status", "Error");
             json.accumulate("Timestamp", String.valueOf(timeStamp));
@@ -57,7 +57,7 @@ public class ShapeShifter {
             return errorObject.toString();
         } else {
             JSONObject successObject = new JSONObject();
-            double shapeThreeArea = Calculs.calculateTrapezoidArea(base1, base2, height);
+            double shapeThreeArea = Calcul.calculateTrapezoidArea(base1, base2, height);
 
             successObject.accumulate("Statut", "OK");
             successObject.accumulate("Timestamp", Instant.now().toEpochMilli() / 100000);
