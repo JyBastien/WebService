@@ -6,6 +6,7 @@
 package utils;
 
 import java.time.Instant;
+import java.util.Date;
 import net.sf.json.JSONObject;
 
 /** 
@@ -20,8 +21,23 @@ public class ShapeShifter {
     }
 
     public static String shapeOne(String nameOfShape, double val1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        JSONObject json = new JSONObject();  
+        
+        long timeStamp = new Date().getTime() / 100000;        
+        
+        if(nameOfShape.equalsIgnoreCase("Circle")) {
+            json.accumulate("Status", "OK");
+            json.accumulate("Shape", nameOfShape.toUpperCase());
+            json.accumulate("raduis",val1 );
+            json.accumulate("area", Calcul.areaFromRadius(val1));
+        }else {            
+            json.accumulate("Status", "Error");
+            json.accumulate("Timestamp", String.valueOf(timeStamp));
+            json.accumulate("Shape", nameOfShape);           
+            json.accumulate("Message", "Not the good Shape");      
+        }
+        
+        return json.toString();    }
 
     public static String shapeTwo(String nameOfShape, double val1, double val2) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

@@ -13,8 +13,12 @@ public class Calcul {
 
     public static double calculateTrapezoidArea(double base1, double base2, double height) {
         double area = (0.5 * (base1 + base2)) * height;
-        
+
         return area;
+    }
+
+    static double areaFromRadius(double radius) {
+        return Math.PI * Math.pow(radius, 2);
     }
 
 }
