@@ -17,6 +17,7 @@ import net.sf.json.JSONObject;
 public class ShapeShifter {
 
     public static String shapesList() {
+//        Les formes
         JSONArray liste = new JSONArray();
         JSONObject triangle = new JSONObject();
         triangle.accumulate("name", "triangle");
