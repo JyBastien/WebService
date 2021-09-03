@@ -5,6 +5,8 @@
  */
 package webserviceteamtest;
 
+import utils.ShapeShifter;
+
 /**
  *
  * @author ThinkCenter
@@ -15,8 +17,12 @@ public class WebServiceTeamTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        //testsestsrst
+
+        System.out.println(ShapeShifter.shapeThree("trapEzoid", 5, 2, 3) + "\n");
+   
+        System.out.println(ShapeShifter.shapeThree("raPezoid", 5, 2, 3));
+
+
     }
-    
+
 }

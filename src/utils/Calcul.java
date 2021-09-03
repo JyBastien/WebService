@@ -11,19 +11,10 @@ package utils;
  */
 public class Calcul {
 
-    public static double calculShapeOne() {
-
-        return 0;
-    }
-
-    public static double calculShapeTwo() {
-
-        return 0;
-    }
-
-    public static double calculShapeThree() {
-
-        return 0;
+    public static double calculateTrapezoidArea(double base1, double base2, double height) {
+        double area = (0.5 * (base1 + base2)) * height;
+        
+        return area;
     }
 
 }
